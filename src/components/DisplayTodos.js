@@ -33,6 +33,7 @@ const DisplayTodos = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("active")}
+          className={sort === "active" ? "activeBg" : ""}
         >
           Active
         </motion.button>
@@ -40,6 +41,7 @@ const DisplayTodos = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("completed")}
+          className={sort === "completed" ? "activeBg" : ""}
         >
           Completed
         </motion.button>
@@ -47,6 +49,7 @@ const DisplayTodos = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("all")}
+          className={sort === "all" ? "activeBg" : ""}
         >
           All
         </motion.button>

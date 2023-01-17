@@ -197,3 +197,7 @@ body {
     margin-right: 0;
   }
 }
+.activeBg{
+  background-color:#271c6c;
+  color: #e1ebfd;
+}
